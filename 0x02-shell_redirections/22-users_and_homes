@@ -1,0 +1,4 @@
+#!/bin/bash
+cat /etc/passwd | awk -F: '{print $1, $6}' | sort -k1,1
+$ ./userdirs.sh
+

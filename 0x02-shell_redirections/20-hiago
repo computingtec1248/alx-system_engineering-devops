@@ -1,0 +1,3 @@
+#!/bin/bash
+tr -d 'cC' < input.txt > output.txt
+

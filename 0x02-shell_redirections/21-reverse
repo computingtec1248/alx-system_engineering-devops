@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "$(cat)" | rev
+$ echo "hello world" | ./reverse.sh
+dlrow olleh

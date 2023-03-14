@@ -1,0 +1,17 @@
+#!/bin/bash
+# Set the initial count to 0
+count=0
+
+# Use a for loop to iterate over all directories and subdirectories in the current directory
+for dir in $(find . -type d)
+do
+    # Increment the count for each directory and subdirectory
+    ((count++))
+done
+
+# Subtract 1 from the count to exclude the current directory (which is also a directory)
+((count--))
+
+# Print the final count
+echo "The number of directories and subdirectories in the current directory is: $count"
+
